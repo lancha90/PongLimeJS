@@ -2,6 +2,14 @@
 PongLimeJS
 ==========
 
+PongLimeJS es un juego de ejemplo desarrolla con node.js y lime.js con la ayuda de clojure.
+
+Para continuar con el desarrollo del juego es necesario modificar los archivos de la carpeta `pong_node`.
+
+Para ver el juego compilado se puede hacer visualizando el archivo `compiled/pong/pong_node.html`
+
+
+
 PongLimeJS is a game development example in node.js and lime.js
 
 #LimeJS
