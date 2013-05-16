@@ -1,4 +1,9 @@
-<<<<<<< HEAD
+=======
+PongLimeJS
+==========
+
+PongLimeJS is a game development example in node.js and lime.js
+
 #LimeJS
 
 ##Getting started:
@@ -141,9 +146,3 @@ Closure video from Google I/O 2010:
 
 
 
-=======
-PongLimeJS
-==========
-
-PongLimeJS is a game development example in node.js and lime.js
->>>>>>> 48990fdd7c0caa2a5c4ca9098d42ffb5d91f8c16
