@@ -1,4 +1,4 @@
 PongLimeJS
 ==========
 
-PongLimeJS is a game example development in node.js and lime.js
+PongLimeJS is a game development example in node.js and lime.js
