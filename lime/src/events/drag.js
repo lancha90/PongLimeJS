@@ -36,13 +36,13 @@ lime.events.Drag = function(event, opt_snapToCenter, opt_bounds,
 
     event.swallow(['touchmove', 'mousemove'],
         goog.bind(this.moveHandler_, this));
+
     event.swallow(['touchend', 'touchcancel', 'mouseup'],
         goog.bind(this.releaseHandler_, this));
 
     this.setBounds(opt_bounds || null);
 
     this.dispatchEvent(new goog.events.Event(lime.events.Drag.Event.START));
-
 };
 goog.inherits(lime.events.Drag, goog.events.EventTarget);
 
@@ -91,11 +91,15 @@ lime.events.Drag.prototype.setBounds = function(bounds) {
  * @param {lime.events.Event} e Event.
  */
 lime.events.Drag.prototype.moveHandler_ = function(e) {
-    var pos = e.screenPosition.clone();
+    //var pos = e.screenPosition.clone();
 
-    pos.x -= this.x;
-    pos.y -= this.y;
-    pos = this.target.getParent().screenToLocal(pos);
+    //pos.x -= this.x;
+    //pos.y -= this.y;
+    
+    var pos = this.target.getParent().screenToLocal(e.screenPosition.clone());
+
+    //console.log(pos.y);
+    pong_node.setPlayer(pos.y);
 
     var box = this.getBounds();
 
